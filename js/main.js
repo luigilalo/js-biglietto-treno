@@ -29,3 +29,5 @@ Prezzo totale del biglietto: ${TotalPrice}
 `
 
 console.log (TicketInformation);
+
+document.getElementById("TotalPrice").innerHTML = TotalPrice;
