@@ -17,9 +17,9 @@ if (age > 18 && age < 65) {TotalPrice = km * PriceForKm;}
 
 else if (age < 18) {TotalPrice = (km * PriceForKm) - (km * PriceForKm) * 20 / 100 }
 
-else if (age > 65) {TotalPrice = (km * PriceForKm) - (km * PriceForKm) * 40 / 100 }
+else if (age >= 65) {TotalPrice = (km * PriceForKm) - (km * PriceForKm) * 40 / 100 }
 
-Number(TotalPrice).toFixed(2)
+let PriceFixed = TotalPrice.toFixed(2);
 
 
 // Compilazione ConsoleLog
@@ -34,4 +34,4 @@ Prezzo totale del biglietto: ${TotalPrice}
 
 console.log (TicketInformation);
 
-document.getElementById("TotalPrice").innerHTML = TotalPrice;
+document.getElementById("PriceFixed").innerHTML = PriceFixed;
